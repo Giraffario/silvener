@@ -1,0 +1,333 @@
+[gd_scene format=3 uid="uid://brvgymp1ruije"]
+
+[ext_resource type="PackedScene" uid="uid://du3tg7qch0xsv" path="res://Scenes/player.tscn" id="1_ebmjs"]
+[ext_resource type="Texture2D" uid="uid://ccm10wif3lcxw" path="res://Assets/Bachground.png" id="1_wrm1d"]
+[ext_resource type="Texture2D" uid="uid://5xpyuiophrbm" path="res://Assets/Bachground4.png" id="4_1l0tm"]
+[ext_resource type="PackedScene" uid="uid://drjgoggkmy1mu" path="res://Scenes/Teleport.tscn" id="4_3dryh"]
+[ext_resource type="PackedScene" uid="uid://bkdifhmeiehhs" path="res://Scenes/npc.tscn" id="4_i6g32"]
+[ext_resource type="Texture2D" uid="uid://b1t7lhm2x8wle" path="res://Assets/Bachground2.png" id="4_wowpa"]
+[ext_resource type="Texture2D" uid="uid://dy5v5x4sr0jbh" path="res://Assets/Bachground5.png" id="5_h4fw4"]
+[ext_resource type="Texture2D" uid="uid://dnemt8cupkhl8" path="res://Assets/Bachground3.png" id="6_i6g32"]
+[ext_resource type="PackedScene" uid="uid://ceicehe3uy7sk" path="res://Scenes/npc_2.tscn" id="7_v158k"]
+[ext_resource type="AudioStream" uid="uid://dgobab2ofmj7n" path="res://Assets/330353__zxcvbn9__spring-arrives.mp3" id="10_ldgsr"]
+
+[sub_resource type="WorldBoundaryShape2D" id="WorldBoundaryShape2D_yeiif"]
+normal = Vector2(-0.024251625, -0.99970585)
+distance = -438.03342
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_feee3"]
+size = Vector2(683, 668)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_68n85"]
+size = Vector2(897.0001, 540)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_yqc1j"]
+size = Vector2(888.50006, 344.00003)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_bteup"]
+size = Vector2(545.00006, 168.99988)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_8n8ml"]
+size = Vector2(427, 404.00006)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_ih4pb"]
+size = Vector2(255.00006, 1045.0001)
+
+[sub_resource type="SegmentShape2D" id="SegmentShape2D_2cfhm"]
+a = Vector2(-1328, 275)
+b = Vector2(-698, 486)
+
+[sub_resource type="WorldBoundaryShape2D" id="WorldBoundaryShape2D_2cfhm"]
+distance = -130.0
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_yeiif"]
+size = Vector2(16.999878, 1637.5002)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_vnn0b"]
+size = Vector2(2503.0002, 159.5)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_om7lw"]
+size = Vector2(265.9989, 1620.5002)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_2cfhm"]
+size = Vector2(320, 236.00005)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_10e2u"]
+size = Vector2(169.00049, 313.50006)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_r1cmg"]
+size = Vector2(222, 244.00005)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_vee63"]
+size = Vector2(317.99854, 483.0001)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_blwq4"]
+size = Vector2(176, 1649.5)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_x45ed"]
+size = Vector2(2473, 602)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_fwn1n"]
+size = Vector2(434.5, 642.5)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_47bko"]
+size = Vector2(358, 801.5)
+
+[sub_resource type="SegmentShape2D" id="SegmentShape2D_yeiif"]
+a = Vector2(798, -529)
+b = Vector2(-82, 25)
+
+[sub_resource type="SegmentShape2D" id="SegmentShape2D_vnn0b"]
+a = Vector2(795, -594)
+b = Vector2(971, 152)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_jykjs"]
+size = Vector2(543.5, 836)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_wral3"]
+size = Vector2(2857.5, 140.50003)
+
+[sub_resource type="SegmentShape2D" id="SegmentShape2D_om7lw"]
+a = Vector2(-1186, 518.00006)
+b = Vector2(1294, 0)
+
+[node name="Game" type="Node2D" unique_id=379506252]
+
+[node name="Home" type="Node2D" parent="." unique_id=1290058194]
+position = Vector2(-1018.00006, 383)
+
+[node name="Bachground" type="Sprite2D" parent="Home" unique_id=141030371]
+position = Vector2(1013.5, -467.99994)
+scale = Vector2(2.348751, 2.1573336)
+texture = ExtResource("1_wrm1d")
+
+[node name="Bachground2" type="Sprite2D" parent="Home" unique_id=55977817]
+position = Vector2(3714, -479.00003)
+scale = Vector2(2.3201108, 2.1458888)
+texture = ExtResource("4_wowpa")
+
+[node name="Bachground3" type="Sprite2D" parent="Home" unique_id=63973494]
+position = Vector2(6747.0005, -474)
+scale = Vector2(2.3297873, 2.1631017)
+texture = ExtResource("6_i6g32")
+
+[node name="Bachground4" type="Sprite2D" parent="Home" unique_id=1992282379]
+position = Vector2(9946, -557.75)
+scale = Vector2(2.6365314, 1.9224138)
+texture = ExtResource("4_1l0tm")
+
+[node name="Bachground5" type="Sprite2D" parent="Home" unique_id=2093707904]
+position = Vector2(13332, -568)
+scale = Vector2(2.7666051, 2.4639506)
+texture = ExtResource("5_h4fw4")
+
+[node name="Player" parent="Home" unique_id=1861294870 instance=ExtResource("1_ebmjs")]
+position = Vector2(-46.99994, 14)
+
+[node name="Npc" parent="Home" unique_id=416915512 node_paths=PackedStringArray("main") instance=ExtResource("4_i6g32")]
+position = Vector2(4552, -416)
+main = NodePath("../Player")
+
+[node name="Npc 2" parent="Home" unique_id=2001035947 instance=ExtResource("7_v158k")]
+position = Vector2(10744, -747)
+
+[node name="Ouside" type="Camera2D" parent="Home" unique_id=1624576425]
+position = Vector2(3714, -479)
+enabled = false
+zoom = Vector2(0.455, 0.4)
+
+[node name="Inside" type="Camera2D" parent="Home" unique_id=1426261498]
+position = Vector2(1009.00006, -467)
+rotation = -3.1415925
+scale = Vector2(6585.0366, 285203.03)
+zoom = Vector2(0.455, 0.4)
+
+[node name="Higher" type="Camera2D" parent="Home" unique_id=1829164277]
+position = Vector2(6747, -474)
+rotation = -3.1415925
+scale = Vector2(6585.0366, 285203.03)
+enabled = false
+zoom = Vector2(0.455, 0.4)
+
+[node name="Ending" type="Camera2D" parent="Home" unique_id=1067937379]
+position = Vector2(9946.001, -543)
+rotation = -3.1415925
+scale = Vector2(6585.0366, 285203.03)
+enabled = false
+zoom = Vector2(0.4, 0.44)
+
+[node name="Finish" type="Camera2D" parent="Home" unique_id=1121164788]
+position = Vector2(13332, -637)
+enabled = false
+zoom = Vector2(0.39, 0.33)
+
+[node name="Inside-Main Home" type="StaticBody2D" parent="Home" unique_id=1584071409]
+position = Vector2(926.0001, -132)
+scale = Vector2(0.99999994, 0.9999999)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Home/Inside-Main Home" unique_id=1078087645]
+position = Vector2(-1.000062, 34.000008)
+shape = SubResource("WorldBoundaryShape2D_yeiif")
+
+[node name="CollisionShape2D2" type="CollisionShape2D" parent="Home/Inside-Main Home" unique_id=1098159475]
+position = Vector2(1003.5002, 123.99994)
+shape = SubResource("RectangleShape2D_feee3")
+
+[node name="CollisionShape2D4" type="CollisionShape2D" parent="Home/Inside-Main Home" unique_id=67390523]
+position = Vector2(866.50006, 188.00003)
+shape = SubResource("RectangleShape2D_68n85")
+
+[node name="CollisionShape2D5" type="CollisionShape2D" parent="Home/Inside-Main Home" unique_id=79538459]
+position = Vector2(568.25, 299.00003)
+shape = SubResource("RectangleShape2D_yqc1j")
+
+[node name="CollisionShape2D6" type="CollisionShape2D" parent="Home/Inside-Main Home" unique_id=827063409]
+position = Vector2(179.49997, 395.4999)
+shape = SubResource("RectangleShape2D_bteup")
+
+[node name="CollisionShape2D7" type="CollisionShape2D" parent="Home/Inside-Main Home" unique_id=573108173]
+position = Vector2(1092.5001, -192.00003)
+shape = SubResource("RectangleShape2D_8n8ml")
+
+[node name="CollisionShape2D8" type="CollisionShape2D" parent="Home/Inside-Main Home" unique_id=1168303828]
+position = Vector2(1225.5001, -52.5)
+shape = SubResource("RectangleShape2D_ih4pb")
+
+[node name="CollisionShape2D10" type="CollisionShape2D" parent="Home/Inside-Main Home" unique_id=1190830311]
+shape = SubResource("SegmentShape2D_2cfhm")
+
+[node name="CollisionShape2D9" type="CollisionShape2D" parent="Home/Inside-Main Home" unique_id=1505417268]
+position = Vector2(-1048.0001, 2.3841858e-07)
+rotation = 1.596054
+shape = SubResource("WorldBoundaryShape2D_2cfhm")
+
+[node name="CollisionShape2D3" type="CollisionShape2D" parent="Home/Inside-Main Home" unique_id=995316884]
+position = Vector2(1357.0001, -347.00003)
+shape = SubResource("RectangleShape2D_yeiif")
+
+[node name="Outside" type="StaticBody2D" parent="Home" unique_id=538416277]
+position = Vector2(926.0001, -132)
+scale = Vector2(0.99999994, 0.9999999)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Home/Outside" unique_id=1404353256]
+position = Vector2(2788.0002, 393.25003)
+shape = SubResource("RectangleShape2D_vnn0b")
+
+[node name="CollisionShape2D2" type="CollisionShape2D" parent="Home/Outside" unique_id=1822950239]
+position = Vector2(1667.001, -341.75003)
+shape = SubResource("RectangleShape2D_om7lw")
+
+[node name="CollisionShape2D3" type="CollisionShape2D" parent="Home/Outside" unique_id=732730792]
+position = Vector2(2919.0002, 217.00003)
+shape = SubResource("RectangleShape2D_2cfhm")
+
+[node name="CollisionShape2D4" type="CollisionShape2D" parent="Home/Outside" unique_id=2121598518]
+position = Vector2(3403.501, 188.00003)
+shape = SubResource("RectangleShape2D_10e2u")
+
+[node name="CollisionShape2D5" type="CollisionShape2D" parent="Home/Outside" unique_id=523193204]
+position = Vector2(3599.0007, 222.00003)
+shape = SubResource("RectangleShape2D_r1cmg")
+
+[node name="CollisionShape2D6" type="CollisionShape2D" parent="Home/Outside" unique_id=1975843692]
+position = Vector2(3893.002, 120.5)
+shape = SubResource("RectangleShape2D_vee63")
+
+[node name="Upside" type="StaticBody2D" parent="Home" unique_id=1785282762]
+position = Vector2(6686, -269)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Home/Upside" unique_id=1522867014]
+position = Vector2(-1272, -182.25)
+shape = SubResource("RectangleShape2D_blwq4")
+
+[node name="CollisionShape2D2" type="CollisionShape2D" parent="Home/Upside" unique_id=1096641428]
+position = Vector2(61, 325)
+shape = SubResource("RectangleShape2D_x45ed")
+
+[node name="CollisionShape2D3" type="CollisionShape2D" parent="Home/Upside" unique_id=1266324708]
+position = Vector2(-1134.25, 273.75)
+shape = SubResource("RectangleShape2D_fwn1n")
+
+[node name="CollisionShape2D4" type="CollisionShape2D" parent="Home/Upside" unique_id=1853198777]
+position = Vector2(-195, 171)
+shape = SubResource("RectangleShape2D_47bko")
+
+[node name="CollisionShape2D5" type="CollisionShape2D" parent="Home/Upside" unique_id=914471939]
+position = Vector2(0, -55)
+shape = SubResource("SegmentShape2D_yeiif")
+
+[node name="CollisionShape2D6" type="CollisionShape2D" parent="Home/Upside" unique_id=1648071695]
+shape = SubResource("SegmentShape2D_vnn0b")
+
+[node name="CollisionShape2D7" type="CollisionShape2D" parent="Home/Upside" unique_id=48868416]
+position = Vector2(1072.25, -299)
+shape = SubResource("RectangleShape2D_jykjs")
+
+[node name="End" type="StaticBody2D" parent="Home" unique_id=742676964]
+position = Vector2(9775, -324)
+scale = Vector2(0.99999994, 0.9999999)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Home/End" unique_id=133094779]
+position = Vector2(171.25, 424.25006)
+shape = SubResource("RectangleShape2D_wral3")
+
+[node name="CollisionShape2D2" type="CollisionShape2D" parent="Home/End" unique_id=1504240593]
+position = Vector2(311.00003, -127.000015)
+shape = SubResource("SegmentShape2D_om7lw")
+
+[node name="Teleport" parent="Home" unique_id=2094469261 node_paths=PackedStringArray("inside_camera", "outside_camera") instance=ExtResource("4_3dryh")]
+position = Vector2(70.00006, -1086)
+inside_camera = NodePath("../Inside")
+outside_camera = NodePath("../Ouside")
+
+[node name="CollisionShape2D" parent="Home/Teleport" index="0" unique_id=2005332127]
+position = Vector2(1918, -122)
+
+[node name="Destinationpoint" parent="Home/Teleport" index="1" unique_id=891171439]
+position = Vector2(3644, 607)
+
+[node name="Teleport2" parent="Home" unique_id=1121365178 node_paths=PackedStringArray("inside_camera", "outside_camera") instance=ExtResource("4_3dryh")]
+position = Vector2(140.00012, -2172)
+inside_camera = NodePath("../Ouside")
+outside_camera = NodePath("../Higher")
+
+[node name="CollisionShape2D" parent="Home/Teleport2" index="0" unique_id=2005332127]
+position = Vector2(4889, 1693)
+rotation = 3.1415927
+
+[node name="Destinationpoint" parent="Home/Teleport2" index="1" unique_id=891171439]
+position = Vector2(6607, 1274)
+
+[node name="Teleport3" parent="Home" unique_id=130150599 node_paths=PackedStringArray("inside_camera", "outside_camera") instance=ExtResource("4_3dryh")]
+position = Vector2(140.00012, -2172)
+inside_camera = NodePath("../Higher")
+outside_camera = NodePath("../Ending")
+
+[node name="CollisionShape2D" parent="Home/Teleport3" index="0" unique_id=2005332127]
+position = Vector2(7866, 1052)
+rotation = 3.1415927
+
+[node name="Destinationpoint" parent="Home/Teleport3" index="1" unique_id=891171439]
+position = Vector2(9806, 1629)
+
+[node name="Teleport4" parent="Home" unique_id=1940263636 node_paths=PackedStringArray("inside_camera", "outside_camera") instance=ExtResource("4_3dryh")]
+position = Vector2(280.00024, -4344)
+inside_camera = NodePath("../Ending")
+outside_camera = NodePath("../Finish")
+
+[node name="CollisionShape2D" parent="Home/Teleport4" index="0" unique_id=2005332127]
+position = Vector2(10569, 4020.0002)
+rotation = 4.4505897
+
+[node name="Destinationpoint" parent="Home/Teleport4" index="1" unique_id=891171439]
+position = Vector2(19282, 3649)
+
+[node name="330353Zxcvbn9SpringArrives" type="AudioStreamPlayer" parent="." unique_id=2111358687]
+stream = ExtResource("10_ldgsr")
+volume_db = -20.955
+autoplay = true
+
+[editable path="Home/Teleport"]
+[editable path="Home/Teleport2"]
+[editable path="Home/Teleport3"]
+[editable path="Home/Teleport4"]

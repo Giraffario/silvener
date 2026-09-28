@@ -1,0 +1,61 @@
+[gd_scene format=3 uid="uid://bkdifhmeiehhs"]
+
+[ext_resource type="Texture2D" uid="uid://c4w61a0hcxv7a" path="res://Assets/Character/Npc_1.png" id="1_acqhf"]
+[ext_resource type="Script" uid="uid://dh4r05388d8i5" path="res://Scripts/npc.gd" id="1_xxsvc"]
+[ext_resource type="PackedScene" uid="uid://bpnjg6yj4g6ji" path="res://Scenes/dialoug.tscn" id="3_g6unj"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_xxsvc"]
+atlas = ExtResource("1_acqhf")
+region = Rect2(0, 0, 363, 443)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_g6unj"]
+atlas = ExtResource("1_acqhf")
+region = Rect2(363, 0, 363, 443)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_h1ryf"]
+atlas = ExtResource("1_acqhf")
+region = Rect2(726, 0, 363, 443)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_1ig1v"]
+atlas = ExtResource("1_acqhf")
+region = Rect2(1089, 0, 363, 443)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_yeiif"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_xxsvc")
+}, {
+"duration": 1.2,
+"texture": SubResource("AtlasTexture_g6unj")
+}, {
+"duration": 1.2,
+"texture": SubResource("AtlasTexture_h1ryf")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_1ig1v")
+}],
+"loop": 1,
+"name": &"idle",
+"speed": 7.0
+}]
+
+[node name="Npc" type="CharacterBody2D" unique_id=416915512]
+script = ExtResource("1_xxsvc")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=2064589048]
+sprite_frames = SubResource("SpriteFrames_yeiif")
+animation = &"idle"
+autoplay = "idle"
+frame_progress = 0.58267266
+
+[node name="Chat_Detection_Area" type="Area2D" parent="." unique_id=1399523087]
+
+[node name="Control" parent="Chat_Detection_Area" unique_id=1234836639 instance=ExtResource("3_g6unj")]
+offset_left = -385.0
+offset_top = -926.0
+offset_right = 272.0
+offset_bottom = -436.0
+
+[node name="Timer" type="Timer" parent="." unique_id=966949238]
+autostart = true

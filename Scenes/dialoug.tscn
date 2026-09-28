@@ -1,0 +1,46 @@
+[gd_scene format=3 uid="uid://bpnjg6yj4g6ji"]
+
+[ext_resource type="Script" uid="uid://ctd6tar20jlfg" path="res://Scripts/dialoug.gd" id="1_8euy0"]
+[ext_resource type="Texture2D" uid="uid://b13dj0blhjekd" path="res://Assets/Dialoug.png" id="1_e0p8j"]
+
+[node name="Control" type="Control" unique_id=1234836639]
+custom_minimum_size = Vector2(1, 1)
+layout_mode = 3
+anchors_preset = 0
+offset_right = 481.0
+offset_bottom = 485.0
+script = ExtResource("1_8euy0")
+
+[node name="NinePatchRect" type="NinePatchRect" parent="." unique_id=447290818]
+layout_mode = 1
+anchors_preset = -1
+anchor_right = 0.057000004
+anchor_bottom = 0.032
+offset_left = -39.0
+offset_top = 45.0
+offset_right = 727.583
+offset_bottom = 758.48
+texture = ExtResource("1_e0p8j")
+
+[node name="Name" type="RichTextLabel" parent="NinePatchRect" unique_id=936086674]
+layout_mode = 1
+anchors_preset = -1
+anchor_right = 1.0
+anchor_bottom = 0.5
+offset_left = 283.0
+offset_top = 177.0
+offset_right = -440.60004
+offset_bottom = -160.91817
+scale = Vector2(4, 4.274)
+text = "Croco
+"
+
+[node name="Text" type="RichTextLabel" parent="NinePatchRect" unique_id=461271363]
+layout_mode = 0
+offset_left = 260.0
+offset_top = 266.0
+offset_right = 460.0
+offset_bottom = 490.0
+scale = Vector2(1.5, 1.5)
+text = "Hey Silvy!
+It's time! Winter is coming. The roots are sprouting high. You know what that means? Go ahead and talk with Godette. She's waiting for you."

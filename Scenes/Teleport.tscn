@@ -1,0 +1,20 @@
+[gd_scene format=3 uid="uid://drjgoggkmy1mu"]
+
+[ext_resource type="Script" uid="uid://wtq317wjrsbg" path="res://Scripts/teleport.gd" id="1_c1tt3"]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_yeiif"]
+radius = 66.78848
+height = 470.34525
+
+[node name="Teleport" type="Area2D" unique_id=2094469261]
+script = ExtResource("1_c1tt3")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=2005332127]
+position = Vector2(208, -171)
+rotation = 1.5804021
+shape = SubResource("CapsuleShape2D_yeiif")
+
+[node name="Destinationpoint" type="Marker2D" parent="." unique_id=891171439]
+position = Vector2(110, 43)
+
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]

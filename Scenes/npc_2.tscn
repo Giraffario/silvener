@@ -1,0 +1,39 @@
+[gd_scene format=3 uid="uid://ceicehe3uy7sk"]
+
+[ext_resource type="Texture2D" uid="uid://dnnun0ud56l4o" path="res://Assets/Character/Npc_2.png" id="1_xsdt3"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_8ygaf"]
+atlas = ExtResource("1_xsdt3")
+region = Rect2(0, 0, 727, 794)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_54nqp"]
+atlas = ExtResource("1_xsdt3")
+region = Rect2(727, 0, 727, 794)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_sdpn4"]
+atlas = ExtResource("1_xsdt3")
+region = Rect2(727, 0, 727, 794)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_r2cth"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_8ygaf")
+}, {
+"duration": 1.2,
+"texture": SubResource("AtlasTexture_54nqp")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_sdpn4")
+}],
+"loop": 1,
+"name": &"default",
+"speed": 7.0
+}]
+
+[node name="Npc 2" type="CharacterBody2D" unique_id=2001035947]
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=1879915462]
+sprite_frames = SubResource("SpriteFrames_r2cth")
+autoplay = "default"
+frame_progress = 0.6580789
